@@ -78,6 +78,8 @@ body { font-family: var(--font); color: var(--ink); -webkit-font-smoothing: anti
 }
 
 .pp-body { flex: 1; overflow: hidden; padding: 8px 24px 20px; display: flex; flex-direction: column; gap: 16px; }
+/* screens that carry a floating tab bar need room so the bottom button isn't hidden behind it */
+.screen:has(.tabbar) .pp-body { padding-bottom: 94px; }
 
 /* cards */
 .card { background: var(--card); border-radius: var(--r-lg); box-shadow: var(--sh); padding: 20px; }
