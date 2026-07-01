@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>PocketPilot — UIUXMockups</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+  @page { size: 1280px 720px; margin: 0; }
+  html, body { background: var(--bg); }
+  .deck { display: flex; flex-direction: column; align-items: center; }
+</style>
+</head>
+<body class="deck">
+
+<!-- 1 · TITLE -->
+<section class="slide title-slide">
+  <div class="kicker">Team PocketPilot · VE411</div>
+  <div class="row" style="gap:18px; margin-top:18px; align-items:flex-start;">
+    <div class="logo" style="width:64px;height:64px;border-radius:18px;margin-top:6px"><svg viewBox="0 0 24 24" width="30" height="30" fill="#fff"><path d="M12 2l2.2 6.2L20.5 10l-6.3 1.8L12 18l-2.2-6.2L3.5 10l6.3-1.8z"/></svg></div>
+    <div>
+      <div style="font-size:64px;font-weight:800;letter-spacing:-0.04em;line-height:1;color:var(--ink)">PocketPilot</div>
+      <div class="lead" style="margin-top:14px;max-width:780px">
+        A privacy-aware agent orchestrator. It handles real tasks across your phone apps seamlessly,
+        puts idle home compute to work, and keeps your raw data inside a trusted boundary.</div>
+    </div>
+  </div>
+  <div class="title-badges">
+    <span class="dbadge d-phone">Phone · local vault</span>
+    <span class="dbadge d-home">Home · private tools</span>
+    <span class="dbadge d-cloud">Cloud · assistant</span>
+  </div>
+  <div class="brandmark">Elevator pitch</div>
+  <div class="pageno">01</div>
+</section>
+
+<!-- 2 · TEAM -->
+<section class="slide">
+  <div class="kicker">Team name &amp; members</div>
+  <h2 class="stitle">Team PocketPilot</h2>
+  <div class="member-grid" style="margin-top:40px">
+    <div class="member"><div class="av">ZZ</div><div><div class="mn">Zhaojiacheng Zhou</div><div class="mr">agent orchestration · inference</div></div></div>
+    <div class="member"><div class="av">YW</div><div><div class="mn">Yixiang Wang</div><div class="mr">android · UI automation</div></div></div>
+    <div class="member"><div class="av">TJ</div><div><div class="mn">Tianqing Jiao</div><div class="mr">home-edge backend · router</div></div></div>
+    <div class="member"><div class="av">HZ</div><div><div class="mn">Haoxuan Zeng</div><div class="mr">UX research · market analysis</div></div></div>
+  </div>
+  <div class="brandmark">PocketPilot</div>
+  <div class="pageno">02</div>
+</section>
+
+<!-- 3 · TOOLS + LINKS -->
+<section class="slide">
+  <div class="kicker">Prototype &amp; tools</div>
+  <h2 class="stitle">How this mockup was made</h2>
+  <div class="cols2" style="margin-top:24px">
+    <div class="bullets">
+      <div class="b"><span class="mk">◇</span><div class="bt"><b>Design in Figma;</b> the clickable prototype is then a <b>hand-coded HTML · CSS · JavaScript</b> app that mirrors the Figma storyboard.</div></div>
+      <div class="b"><span class="mk">◇</span><div class="bt"><b>Interactive:</b> every button, tab and the “Anon” pill transitions to another screen — as required for a digital prototype.</div></div>
+      <div class="b"><span class="mk">◇</span><div class="bt"><b>Exported</b> to this PDF with Google Chrome (print-to-PDF). Font: Plus Jakarta Sans.</div></div>
+    </div>
+    <div>
+      <div class="link-box">
+        <div class="k">Live interactive prototype</div>
+        <div class="link-line">https://chhc-l.github.io/PocketPilot-Prototype/</div>
+        <div style="font-size:12px;color:var(--ink-mute);margin-top:8px;font-weight:500">Public link — open in any browser. Staff contact: <b>ve441staff.2025@gmail.com</b>.</div>
+      </div>
+      <div class="link-box" style="margin-top:14px">
+        <div class="k">Usability pilot-run video</div>
+        <div class="link-line">https://www.bilibili.com/video/… &nbsp;<span style="color:var(--warn)">← paste your unlisted link</span></div>
+        <div style="font-size:12px;color:var(--ink-mute);margin-top:8px;font-weight:500">≤ 20 min · pilot run only · recorded by the team.</div>
+      </div>
+    </div>
+  </div>
+  <div class="brandmark">PocketPilot</div>
+  <div class="pageno">03</div>
+</section>
+
+<!-- 4 · UX FLOW OVERVIEW -->
+<section class="slide">
+  <div class="kicker">UI/UX flow · full app</div>
+  <h2 class="stitle" style="font-size:34px">One task, end to end — with the privacy trail visible</h2>
+  <div class="flow-wrap" id="flow"></div>
+  <div class="brandmark">Skeletal + MVP · core value flow</div>
+  <div class="pageno">04</div>
+</section>
+
+<!-- 5 · ZOOM A -->
+<section class="slide">
+  <div class="kicker">Flow zoom-in · branching</div>
+  <h2 class="stitle" style="font-size:34px">Privacy review: what leaves the phone is the user's choice</h2>
+  <div class="cols2" style="grid-template-columns: 1.2fr 0.8fr;">
+    <div class="bullets tight">
+      <div class="b"><span class="mk">◆</span><div class="bt"><b>Protected request</b> — the task is rewritten as <b>[LOCAL_FILE]</b> and <b>[CONTACT]</b> before any cloud assistance starts.</div></div>
+      <div class="b"><span class="mk">◆</span><div class="bt"><b>Private vault</b> holds the real values, “resolved only on this phone”. They are never uploaded.</div></div>
+      <div class="b"><span class="mk">◆</span><div class="bt"><b>Branch:</b> <i>Ask assistant safely</i> proceeds; the user can also go back to reword or detach the file first.</div></div>
+      <div class="b"><span class="mk">◆</span><div class="bt">This screen carries the core value proposition: <b>capability without exposure</b>.</div></div>
+    </div>
+    <div class="standalone" style="margin:0"><div class="stage" data-screen="privacy" data-scale="0.66" style="width:100%"></div></div>
+  </div>
+  <div class="brandmark">PocketPilot</div>
+  <div class="pageno">05</div>
+</section>
+
+<!-- 6 · ZOOM B -->
+<section class="slide">
+  <div class="kicker">Flow zoom-in · user control</div>
+  <h2 class="stitle" style="font-size:34px">Confirm before sending → then prove where data went</h2>
+  <div class="cols2" style="grid-template-columns: 0.42fr 0.42fr 1fr; gap:26px;">
+    <div class="standalone" style="margin:0"><div class="stage" data-screen="confirm" data-scale="0.52" style="width:100%"></div></div>
+    <div class="standalone" style="margin:0"><div class="stage" data-screen="details" data-scale="0.52" style="width:100%"></div></div>
+    <div class="bullets tight">
+      <div class="b"><span class="mk">◆</span><div class="bt"><b>Confirmation gate:</b> nothing is sent until the user approves. Real details are restored on-device only for this preview.</div></div>
+      <div class="b"><span class="mk">◆</span><div class="bt"><b>Edit branch</b> returns to the assistant with nothing sent.</div></div>
+      <div class="b"><span class="mk">◆</span><div class="bt"><b>Privacy trail</b> lists every hop and shows “cloud only ever saw anonymous labels” — the differentiator users can verify, not just trust.</div></div>
+    </div>
+  </div>
+  <div class="brandmark">PocketPilot</div>
+  <div class="pageno">06</div>
+</section>
+
+<!-- 7 · TRIAL / DEMO FLOW -->
+<section class="slide">
+  <div class="kicker">Trial / demo UI-UX flow</div>
+  <h2 class="stitle" style="font-size:34px">Experience the value before any setup</h2>
+  <div class="cols2" style="grid-template-columns: 1.1fr 0.9fr;">
+    <div class="bullets tight">
+      <div class="b"><span class="mk">✦</span><div class="bt"><b>Anonymous by default.</b> Setup is only needed to connect a home device, so we gate it as late as possible.</div></div>
+      <div class="b"><span class="mk">✦</span><div class="bt"><b>Start a private task</b> drops the user straight into a workspace with a sample file attached — no account, no sign-in wall.</div></div>
+      <div class="b"><span class="mk">✦</span><div class="bt">A full task (capture → protect → route → confirm → done → verify) runs entirely in anonymous mode.</div></div>
+      <div class="b"><span class="mk">✦</span><div class="bt"><b>Connect a home device</b> is the alternate branch for users ready to add their own private tools — the only path that reaches setup.</div></div>
+    </div>
+    <div class="row" style="justify-content:center; gap:8px; align-items:center;">
+      <div class="stage" data-screen="welcome" data-scale="0.46"></div>
+      <div class="flow-arrow">→</div>
+      <div class="stage" data-screen="home" data-scale="0.46"></div>
+    </div>
+  </div>
+  <div class="brandmark">Sub-section 3.1</div>
+  <div class="pageno">07</div>
+</section>
+
+<!-- 8-15 · STANDALONE SCREENS injected by JS -->
+<div id="standalones"></div>
+
+<!-- USABILITY: GREETING -->
+<section class="slide">
+  <div class="kicker">Usability testing script · a. Greeting &amp; introduction</div>
+  <h2 class="stitle" style="font-size:32px">What the facilitator says first</h2>
+  <div class="qbox" style="margin-top:22px; max-width:1050px; line-height:1.75; font-size:15px; color:var(--ink-2);">
+    “Thanks for helping us out today. Before we start, a few things I want to be clear about:
+    <br><br>
+    • We're testing <b>the app, not you</b> — there are no wrong moves, and anything you find confusing is useful feedback for us.<br>
+    • You can <b>stop at any time</b>, for any reason, and you don't have to explain why.<br>
+    • Please <b>think out loud</b> as you go — tell me what you're looking at, what you expect to happen, and where you get stuck. <b>Ask questions</b> freely, though I may not answer some so I can see what you'd do on your own.<br>
+    • We've already <b>created a test account and signed you in</b>, with a sample file loaded, so you can focus on the tasks.
+    <br><br>
+    I'll give you a few short tasks. Ready when you are.”
+  </div>
+  <div style="font-size:12px;color:var(--ink-mute);margin-top:16px;font-weight:600">Weight: 3% of the 30% usability-testing grade.</div>
+  <div class="brandmark">PocketPilot</div>
+  <div class="pageno">08</div>
+</section>
+
+<!-- RESEARCH QUESTIONS -->
+<section class="slide">
+  <div class="kicker">Usability testing script · b. Research questions</div>
+  <h2 class="stitle" style="font-size:32px">What the test tries to answer</h2>
+  <div class="lead" style="max-width:1000px">Derived from our value proposition. We never ask testers these directly — we infer answers from how they perform the tasks.</div>
+  <div class="qbox" style="margin-top:18px; max-width:1080px;">
+    <ul>
+      <li><b>RQ1 — Task expression:</b> Can a first-time user state a real task in plain language and trust PocketPilot to carry it out?</li>
+      <li><b>RQ2 — Privacy transparency:</b> Do users understand what stays on their phone versus what the cloud sees, and does that build trust?</li>
+      <li><b>RQ3 — Verifiability:</b> Can users confirm for themselves that sensitive details (a file, a contact) were only ever anonymous labels to the cloud?</li>
+      <li><b>RQ4 — Control:</b> Do users feel in control at the confirmation step, and can they stop or edit before anything is sent?</li>
+      <li><b>RQ5 — Onboarding friction:</b> Can users reach and complete core value in anonymous mode before any account or device pairing?</li>
+    </ul>
+  </div>
+  <div style="font-size:12px;color:var(--ink-mute);margin-top:14px;font-weight:600">Weight: 20% of the 30%.</div>
+  <div class="brandmark">PocketPilot</div>
+  <div class="pageno">09</div>
+</section>
+
+<!-- TASKS -->
+<section class="slide">
+  <div class="kicker">Usability testing script · c. Tasks per research question</div>
+  <h2 class="stitle" style="font-size:32px">Tasks (given without telling users how)</h2>
+  <div class="qbox" style="margin-top:16px; max-width:1120px;">
+    <ul>
+      <li><b>T1 (RQ1):</b> “You have a PDF and want the app to summarise it and prepare a reply email to your groupmate. Get PocketPilot to do it.”</li>
+      <li><b>T2 (RQ2):</b> “Before the assistant does anything, find out what information about you leaves your phone, and what the cloud can see.”</li>
+      <li><b>T3 (RQ3):</b> “After the task finishes, check whether your groupmate's real details were ever sent to the cloud.”</li>
+      <li><b>T4 (RQ4):</b> “The reply isn't quite right — change it before it's sent.”</li>
+      <li><b>T5 (RQ5):</b> “You just installed PocketPilot and haven't set anything up. Try what it can do before creating an account or connecting a device.”</li>
+    </ul>
+  </div>
+  <div style="font-size:12px;color:var(--ink-mute);margin-top:14px;font-weight:600">Weight: 60% of the 30%. Tasks assume the tester is already signed in to a prepared test account.</div>
+  <div class="brandmark">PocketPilot</div>
+  <div class="pageno">10</div>
+</section>
+
+<!-- METRICS -->
+<section class="slide">
+  <div class="kicker">Usability testing script · d. Evaluation metrics</div>
+  <h2 class="stitle" style="font-size:32px">Metric &amp; expected value per task</h2>
+  <table class="dtable">
+    <thead><tr><th>Task</th><th>Success criterion</th><th>Metric</th><th>Expected value</th></tr></thead>
+    <tbody>
+      <tr><td><b>T1</b> Run task</td><td>Reaches the “Task done” recap with a prepared reply</td><td class="metric">time · taps</td><td class="metric">≤ 45 s · ≤ 5 taps</td></tr>
+      <tr><td><b>T2</b> Find privacy view</td><td>States ≥1 item kept local &amp; ≥1 cloud-visible</td><td class="metric">time to locate</td><td class="metric">≤ 20 s</td></tr>
+      <tr><td><b>T3</b> Verify no leak</td><td>Finds the privacy trail, answers “no” correctly</td><td class="metric">time · correctness</td><td class="metric">≤ 30 s · 100%</td></tr>
+      <tr><td><b>T4</b> Edit before send</td><td>Uses the confirm screen to edit before sending</td><td class="metric">taps · success</td><td class="metric">≤ 2 taps · 100%</td></tr>
+      <tr><td><b>T5</b> Demo before setup</td><td>Completes a task with 0 forced sign-ins</td><td class="metric">forced sign-ins</td><td class="metric">0</td></tr>
+    </tbody>
+  </table>
+  <div style="font-size:12px;color:var(--ink-mute);margin-top:14px;font-weight:600">Weight: 15% of the 30%. Expected values are the best achievable on the current design.</div>
+  <div class="brandmark">PocketPilot</div>
+  <div class="pageno">11</div>
+</section>
+
+<!-- QUESTIONNAIRES -->
+<section class="slide">
+  <div class="kicker">Usability testing script · e. Pre- &amp; post-test questionnaires</div>
+  <h2 class="stitle" style="font-size:32px">Screening &amp; de-brief</h2>
+  <div class="cols2" style="margin-top:20px; align-items:start;">
+    <div class="qbox">
+      <h4>Pre-test — classification only (no tutorial)</h4>
+      <ul>
+        <li>Age range and smartphone OS you use most.</li>
+        <li>How often do you use voice / AI assistants (Siri, ChatGPT, …)?</li>
+        <li>Have you ever done a multi-app chore by hand (e.g. read a file, then email someone about it)?</li>
+        <li>How concerned are you about apps sending your data to the cloud? <span class="likert">(1–5)</span></li>
+        <li>Do you have a technical / CS background? <span class="likert">(y/n)</span></li>
+      </ul>
+    </div>
+    <div class="qbox">
+      <h4>Post-test — de-brief</h4>
+      <ul>
+        <li>I understood what left my phone and what stayed on it. <span class="likert">(1–5)</span></li>
+        <li>I trusted PocketPilot to carry out the task. <span class="likert">(1–5)</span></li>
+        <li>The confirmation step made me feel in control. <span class="likert">(1–5)</span></li>
+        <li>What, if anything, was confusing or unexpected? <span class="likert">(open)</span></li>
+        <li>Would you use this for real tasks? Why / why not? <span class="likert">(open)</span></li>
+      </ul>
+    </div>
+  </div>
+  <div style="font-size:12px;color:var(--ink-mute);margin-top:14px;font-weight:600">Weight: 2% of the 30%.</div>
+  <div class="brandmark">PocketPilot</div>
+  <div class="pageno">12</div>
+</section>
+
+<script src="screens.js"></script>
+<script>
+  function mini(id, scale) {
+    const wrap = document.createElement('div');
+    wrap.className = 'scaled';
+    wrap.style.width = (390 * scale) + 'px';
+    wrap.style.height = (844 * scale) + 'px';
+    const p = PP.buildPhone(id);
+    p.style.transformOrigin = 'top left';
+    p.style.transform = 'scale(' + scale + ')';
+    wrap.appendChild(p);
+    return wrap;
+  }
+
+  document.querySelectorAll('[data-screen]').forEach(box => {
+    const scale = parseFloat(box.dataset.scale || '0.5');
+    const ph = mini(box.dataset.screen, scale);
+    ph.style.margin = '0 auto';
+    box.appendChild(ph);
+  });
+
+  // FLOW DIAGRAM
+  const flow = document.getElementById('flow');
+  const sections = [
+    { label: 'Get started', items: [['welcome', ''], ['setup', 'setup · optional']] },
+    { label: 'Capture → Protect', items: [['home', ''], ['privacy', 'core value']] },
+    { label: 'Route → Confirm', items: [['working', ''], ['confirm', 'user approves']] },
+    { label: 'Done → Verify', items: [['ready', ''], ['details', 'proof']] },
+  ];
+  const FS = 0.30;
+  sections.forEach((sec, i) => {
+    const col = document.createElement('div');
+    col.className = 'flow-col' + (sec.label === 'Get started' ? ' branch' : '');
+    const lab = document.createElement('div'); lab.className = 'seclabel'; lab.textContent = sec.label;
+    col.appendChild(lab);
+    const stack = document.createElement('div'); stack.className = 'flow-phones';
+    sec.items.forEach((it, k) => {
+      const holder = document.createElement('div');
+      holder.style.display = 'flex'; holder.style.flexDirection = 'column'; holder.style.alignItems = 'center'; holder.style.gap = '3px';
+      holder.appendChild(mini(it[0], FS));
+      if (it[1]) { const c = document.createElement('div'); c.style.fontSize = '10px'; c.style.fontWeight = '700'; c.style.color = 'var(--ink-faint)'; c.textContent = it[1]; holder.appendChild(c); }
+      stack.appendChild(holder);
+      if (k === 0) { const d = document.createElement('div'); d.className = 'flow-arrow'; d.style.fontSize = '20px'; d.textContent = '↓'; stack.appendChild(d); }
+    });
+    col.appendChild(stack);
+    flow.appendChild(col);
+    if (i < sections.length - 1) { const a = document.createElement('div'); a.className = 'flow-arrow'; a.textContent = '→'; flow.appendChild(a); }
+  });
+
+  // STANDALONE SCREEN SLIDES
+  const host = document.getElementById('standalones');
+  const captions = PP.meta;
+  let n = 0;
+  PP.order.forEach(id => {
+    n++;
+    const s = document.createElement('section');
+    s.className = 'slide';
+    const num = String(n).padStart(2, '0');
+    s.innerHTML = `
+      <div class="kicker">Individual UI screen mockup · ${num} / 08</div>
+      <div class="standalone">
+        <div class="meta">
+          <div class="num">${num}</div>
+          <h3>${captions[id].name}</h3>
+          <p>${captions[id].cap}</p>
+          <div class="tags"><span class="dbadge d-home">${captions[id].group}</span><span class="dbadge d-phone">390 × 844</span></div>
+        </div>
+        <div class="stage" id="sa-${id}"></div>
+      </div>
+      <div class="brandmark">Standalone · presented one at a time</div>
+      <div class="pageno">08-${String.fromCharCode(96 + n)}</div>`;
+    host.appendChild(s);
+    s.querySelector('#sa-' + id).appendChild(mini(id, 0.62));
+  });
+</script>
+</body>
+</html>
