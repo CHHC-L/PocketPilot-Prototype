@@ -273,7 +273,7 @@
     { label: 'Route → Confirm', items: [['working', ''], ['confirm', 'user approves']] },
     { label: 'Done → Verify', items: [['ready', ''], ['details', 'proof']] },
   ];
-  const FS = 0.30;
+  const FS = 0.235;
   sections.forEach((sec, i) => {
     const col = document.createElement('div');
     col.className = 'flow-col' + (sec.label === 'Get started' ? ' branch' : '');
@@ -286,7 +286,7 @@
       holder.appendChild(mini(it[0], FS));
       if (it[1]) { const c = document.createElement('div'); c.style.fontSize = '10px'; c.style.fontWeight = '700'; c.style.color = 'var(--ink-faint)'; c.textContent = it[1]; holder.appendChild(c); }
       stack.appendChild(holder);
-      if (k === 0) { const d = document.createElement('div'); d.className = 'flow-arrow'; d.style.fontSize = '20px'; d.textContent = '↓'; stack.appendChild(d); }
+      if (k === 0) { const d = document.createElement('div'); d.className = 'flow-arrow'; d.style.fontSize = '15px'; d.textContent = '↓'; stack.appendChild(d); }
     });
     col.appendChild(stack);
     flow.appendChild(col);

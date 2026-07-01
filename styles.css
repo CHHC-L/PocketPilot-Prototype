@@ -234,11 +234,11 @@ body { font-family: var(--font); color: var(--ink); -webkit-font-smoothing: anti
 .d-cloud { color: var(--purple-ink); background: var(--purple-soft); }
 
 /* flow diagram */
-.flow-wrap { flex: 1; display: flex; align-items: center; margin-top: 14px; overflow: hidden; }
-.flow-col { display: flex; flex-direction: column; align-items: center; gap: 12px; padding: 0 6px; }
+.flow-wrap { flex: 1; display: flex; align-items: center; justify-content: center; margin-top: 6px; overflow: hidden; }
+.flow-col { display: flex; flex-direction: column; align-items: center; gap: 8px; padding: 0 4px; }
 .flow-col .seclabel { font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--green-ink); background: var(--green-soft); padding: 5px 12px; border-radius: 999px; font-weight: 700; }
 .flow-col.branch .seclabel { color: var(--purple-ink); background: var(--purple-soft); }
-.flow-phones { display: flex; flex-direction: column; gap: 12px; }
+.flow-phones { display: flex; flex-direction: column; gap: 8px; }
 .flow-arrow { color: var(--ink-faint); font-size: 28px; padding: 0 2px; align-self: center; }
 .scaled { position: relative; overflow: hidden; }
 
